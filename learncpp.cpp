@@ -4,29 +4,35 @@
 
 #include "WhileTest.h"
 #include "IostreamTest.h"
+#include "AlwaysRead.h"
+
 
 using namespace std;
 int main()
 {
-   
+   //输入输出
     IostreamTest iostreamTest;
     iostreamTest.run();
 
+    //while
     WhileTest whileTest ;
     whileTest.run();
 
-    //----------------------------------
-    std::cout << "输入任意数字，用空格分隔,\\n结束输入" << std::endl;
-    int sum = 0, value = 0;
-    while (std::cin >> value) {
-        sum += value;
-    }
-    std::cout << "输入的所有数字的和为：" << sum << std::endl;
+    //读取数量不定的输入数据 
+    AlwaysRead alwaysread;
+    alwaysread.run();
+    
+    //指针 
+    int apple = 42;
+    int *p = &apple;
 
-    
-    
-    
-    
+    cout << "直接用变量输出:apple= "<< apple << endl;
+    cout << "使用指针输出:" << * p << endl;
+    cout << "对指针解引用得到所指对象，对其赋值" << endl;
+
+    *p = 0;
+    cout << *p << endl; //其实就是apple这个值 
+    cout << apple << endl;
     
     return 0;
 }

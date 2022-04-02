@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AlwaysRead.cpp" />
     <ClCompile Include="IostreamTest.cpp" />
     <ClCompile Include="learncpp.cpp" />
     <ClCompile Include="WhileTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlwaysRead.h" />
     <ClInclude Include="IostreamTest.h" />
     <ClInclude Include="WhileTest.h" />
   </ItemGroup>

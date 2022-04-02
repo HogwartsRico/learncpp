@@ -24,12 +24,18 @@
     <ClCompile Include="IostreamTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="AlwaysRead.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WhileTest.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="IostreamTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlwaysRead.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
